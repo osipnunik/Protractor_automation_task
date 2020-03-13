@@ -5,3 +5,5 @@ webdriver-manager start
 
 Open a new command line or terminal window and go to project root folder.
 run command: protractor conf.js
+
+there in root directory you can find test-cases in file scenarious.txt
