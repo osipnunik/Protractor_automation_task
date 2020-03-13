@@ -1,0 +1,35 @@
+Scenario 1: Authorization page. Not registered user
+when user open a home pages
+then Home page has to be opened
+when user Click on "LOG IN" text
+then Authorization page has to be opened
+when user On the authorization page enter not registered email and any password
+and click on "eye" icon in password field,
+then password should be displayed
+when user click "Login" button
+then errors messages such as: “Uh oh! Email or password is incorrect” should be displayed
+
+Scenario 2: Authorization page (Welcome back!)
+When user Open Home page
+then Home page has to be opened
+when user Click on "LOG IN" text
+Authorization page has to be opened
+when user After click on "eye" icon for password field
+then password should be displayed
+when On the authorization page user enter valid email and password for previously registered user
+then "Log in" button has to be changed on "User@email" button (with dropdown menu) from the left side in the Header of the page
+
+Scenario 3: My profile page. Client area
+expected data:
+  name = 'Vasya Pupkin'
+  email = 'ssls.automation+666@gmail.com'
+  password = '*****'
+  phone = '+380 12345678'
+  address = 'Diagon alley 21, Misto, Uryupinsk 612120, Ukraine'
+  Support Pin = 'fchx'
+  Newsletter = 'Include in mailing list'
+when user log in to Account
+and Click on triangle near the "ssls.automation+666@gmail.com" button
+then After click on "View profile" opened page "Profile" should be displayed
+when user In drop-down menu select "View profile"
+then  Name Email, Password, Phone, Address, Support pin, Newsletter should be as expected;
